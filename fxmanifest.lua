@@ -9,7 +9,10 @@ shared_scripts {
     'locales/en.lua', -- Change to the language you want
     'config.lua'
 }
-server_script 'server/*.lua'
+server_scripts {
+	'configServer.lua',
+	'server/*.lua'
+}
 client_scripts {
     '@PolyZone/client.lua',
     '@PolyZone/BoxZone.lua',
